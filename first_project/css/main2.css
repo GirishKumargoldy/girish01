@@ -1,0 +1,258 @@
+
+body{
+	margin: 0;
+	padding: 0;
+  background-image: linear-gradient(125deg,#2c3e50,#27ae60,#2980b9,#e74c3c,#8e44ad);	
+	background-size: 400% 400%;
+  animation: bganimation 10s infinite;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  height: auto;
+}
+@keyframes bganimation{
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+     background-position:100% 50%;
+  }
+  100%{
+     background-position:0% 50%;
+  }
+}
+
+.menu_bar{
+	margin: 0;
+	padding: 0;
+	height: 90px;
+  padding: 1%;
+/*  background-color:pink;*/
+
+}
+
+
+.menu_bar>ul{
+    list-style-type: none;
+    
+    display: inline-flex;
+    float: right;
+    margin-top: -2%;
+}
+.menu_bar>ul>li{
+	float: right;
+    width: 150px;
+    font-size: 25px;
+    padding: 2%;
+    margin-top: -11%;
+}
+.menu_bar>ul>li:hover{
+  text-transform: uppercase;
+  text-decoration: underline /*rgb(13,243,40)*/ rgb(175,237,19) 5px;
+  cursor: pointer;
+}
+
+
+.container_menu{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.menu_bar>li>.site>b>img{
+	width: 30%;
+  height: 120px;
+  margin-top: -1%;
+}
+.menu_bar>li{
+	list-style-type: none;
+}
+
+.menu_bar>ul>li>a{
+   
+   font-size: 20px;
+   letter-spacing: 1px;
+   color: white;
+  text-decoration: none;
+}
+      
+
+form {
+  border: 3px solid #f1f1f1;
+  width: 400px;
+  margin-top: 70px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px gray;
+ 
+}
+
+input[type=text], input[type=password] {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.main_div{
+  width: 40%;
+  height: 400px;
+  position: relative;
+  left: 50%;
+  
+  margin-top: 20%;
+  transform: translate(-50%,-50%);
+  background-image: url("../poem.jpg");
+  background-size: 100% 100%;
+  box-shadow: 0px 0px 10px 5px white;
+  animation: slider 2s infinite linear;
+
+}
+@keyframes slider{
+  0%{
+      background-image: url("../qut.jpg");
+  }
+  25%{
+        background-image: url("../qut1.png");
+  }
+  50%{
+        background-image: url("../qut.jpg");
+  }
+  75%{
+          background-image: url("../qut1.png");
+  }
+}
+
+.footer{
+  position: fixed;
+  font-size: 18px;
+  color: white;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+}
+
+@media(min-width: 300px) and (max-width: 700px)
+{
+ 
+body{
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(125deg,#2c3e50,#27ae60,#2980b9,#e74c3c,#8e44ad);  
+  background-size: 400% 400%;
+  animation: bganimation 10s infinite;
+  height: 100%;
+}
+@keyframes bganimation{
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+     background-position:100% 50%;
+  }
+  100%{
+     background-position:0% 50%;
+  }
+}
+.menu_bar>li>.site>b>img{
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.menu_bar>ul{
+  width: 100%;
+  
+
+}
+.menu_bar>ul>li{
+    text-align: center;
+    margin-top: 20px;
+
+    
+}
+.menu_bar>ul>li>a{
+   font-size: 60%;
+   color: white;
+   /*padding: -1%;*/
+   text-decoration: none;
+}
+.text{
+  font-size: 20px;
+  margin: 30% 10%;
+  color: white;
+  text-shadow: 0px 0px 10px black;
+  /*justify-content: justify;*/
+  font-family: alura;
+}
+.footer{
+  font-size: 15px;
+}
+
+form {
+  border: 3px solid #f1f1f1;
+  width: 80%;
+  margin-top:25%;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px black;
+ 
+}
+
+input[type=text], input[type=password] {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+  .main_div{
+  width: 70%;
+  height: 250px;
+  position: relative;
+  left: 50%;
+  
+  margin-top: 70%;
+  transform: translate(-50%,-50%);
+  background-image: url("../POEM.jpg");
+  background-size: 100% 100%;
+  box-shadow: 0px 0px 10px 5px white;
+  animation: slider 2s infinite linear;
+
+}
+
+}
+
+
+
